@@ -1,42 +1,59 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html{
+  background-color:aqua;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.nav{
+  background-color: aliceblue;
+  width: 100%;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.downloadBtn{
+  width: 200px;
+  height: 100px;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.downloadDiv{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h2{
+text-align: center;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+form{
+  background-color: aqua;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.downloadForm{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.progress{
+  width: 300px;
+}
+.allFiles{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  background-color:aqua;
+}
+.fileElement{
+  height: 50px;
+  display: grid;
+  gap: 5%;
+  width: 50%;
+  justify-content: right;
+  grid-template-columns: repeat(3, auto);
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: aliceblue;
+  font-size: large;
+}
+.buttonElement{
+  width: 100px;
 }
