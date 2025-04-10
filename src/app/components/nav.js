@@ -10,10 +10,13 @@ export function Nav() {
     <Link className="nav-link active" href="/images">Images</Link>
   </li>
   <li className="nav-item">
+    <Link className="nav-link active" href="/audio">Audio</Link>
+  </li>
+  <li className="nav-item">
     <Link className="nav-link active" href="/documents">Documents</Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link active" href="/videos">Videos</Link>
+    <Link className="nav-link active" href="/video">Video</Link>
   </li>
   <li className="nav-item">
     <Link className="nav-link active" href="/all">All files</Link>

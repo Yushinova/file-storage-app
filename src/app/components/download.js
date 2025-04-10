@@ -1,6 +1,6 @@
 "use client"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ProgressBar, Loading} from "./loading";
+import { Loading} from "./loading";
 import { useEffect, useRef, useState } from 'react';
 import { supabase } from "../utils/supabase"
 import { UploadFile, GetPublicUrl } from '../api/storage';
@@ -17,9 +17,14 @@ console.log("file:"+event.target.files)
       setFile(event.target.files[0])
     }
   };
-
+  //очистить данные input
+function handleCklick(){
+  document.getElementById('inputGroupFile02').value = ''
+}
+//загрузка файла и добавление его в базу данных
 async function onFormSubmit (event) {
     event.preventDefault();
+    setResult("");
     setLoading(true);
    try{
     //загрузка файла в storage
@@ -44,15 +49,14 @@ async function onFormSubmit (event) {
     setLoading(false);
    }
   };
-
-
     return(
 <div className="downloadDiv" onSubmit={onFormSubmit}>
    <form className="downloadForm" >
      <div className="input-group mb-3">
         <input type="file" className="form-control" id="inputGroupFile02" 
          onChange={handleChange}/>
-        <button className="btn btn-outline-secondary" type="button" id="button-addon2">Clear</button>
+        <button className="btn btn-outline-secondary" type="button" id="button-addon2"
+        onClick={handleCklick}>Clear</button>
        </div>
        <button type="submit" className="btn btn-secondary downloadBtn">Download</button>
     </form> 

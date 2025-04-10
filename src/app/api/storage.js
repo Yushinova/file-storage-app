@@ -32,3 +32,31 @@ export async function GetPublicUrl(fileName) {
 }
 
 //удаление
+export async function DeleteFromStorage(path){
+    try{
+        const { data, error } = await supabase
+        .storage
+        .from(BACKETNAME)
+        .remove([path])
+      return error;
+    }
+    catch(err){
+        console.log('err: '+err);
+        return err;
+    }
+}
+//получаем blop файл и далее используем по назначению
+//можно преобразовать файл и встроить в элемент страницы, задать img, фон и тд
+export async function DownloadFromStorage(path){
+    try{
+        const { data, error } = await supabase
+        .storage
+        .from(BACKETNAME)
+        .download(path);
+        return data;
+    }
+    catch(err){
+        console.log('err: '+err);
+        return err;
+    }
+}
