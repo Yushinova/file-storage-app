@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 export default function Home() {
   const router = useRouter();
-  const searchParams = useSearchParams();
+ // const searchParams = useSearchParams();
   let [login, setLogin] = useState('');
   useEffect(() => {
     let user = localStorage.getItem('login');
