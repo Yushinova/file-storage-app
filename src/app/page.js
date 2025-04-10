@@ -10,9 +10,10 @@ export default function Home() {
  // const searchParams = useSearchParams();
   let [login, setLogin] = useState('');
   useEffect(() => {
-    let user = localStorage.getItem('login');
-    setLogin(localStorage.getItem('login'));
-   if(user===''){
+    //localStorage.clear();
+    let login = localStorage.getItem('login');
+    setLogin(login);
+   if(login==null){
     router.push('/login');
    }
    console.log('login: '+login)
