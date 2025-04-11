@@ -10,7 +10,7 @@ export default function Home() {
  // const searchParams = useSearchParams();
   let [login, setLogin] = useState('');
   useEffect(() => {
-    localStorage.clear();
+    //localStorage.clear();
     let login = localStorage.getItem('login');
     setLogin(login);
    if(login==null){
