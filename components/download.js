@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Loading} from "./loading";
 import { useEffect, useRef, useState } from 'react';
 import { supabase } from "../utils/supabase"
-import { UploadFile, GetPublicUrl } from '../src/app/api/storage';
-import { PostFile } from '../src/app/api/files';
+import { UploadFile, GetPublicUrl } from '../api/storage';
+import { PostFile } from '../api/files';
 //upload 
 export function Download() {
   let [fileInput, setFile] = useState(null)

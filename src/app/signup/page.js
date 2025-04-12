@@ -1,6 +1,6 @@
 "use client"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { PostUser } from '../api/users';
+import { PostUser } from '../../../api/users';
 import { useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';

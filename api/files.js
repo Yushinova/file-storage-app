@@ -1,4 +1,4 @@
-import { supabase } from "../../../utils/supabase";
+import { supabase } from "../utils/supabase";
 //доавление файла в ведерко
 export async function PostFile(login, fileName, url, type){
     try{

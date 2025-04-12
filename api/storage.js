@@ -1,4 +1,4 @@
-import { supabase } from "../../../utils/supabase";
+import { supabase } from "../utils/supabase";
 //работа с корзиной
 const BACKETNAME = 'file-storage-app-backet';
 //доавление файла word exel не добавляет!
