@@ -1,5 +1,5 @@
 FROM node:18
-WORKDIR file-storage-app
+WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
