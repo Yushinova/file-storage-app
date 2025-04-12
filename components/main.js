@@ -1,5 +1,5 @@
 "use client";
-import styles from "../page.module.css";
+import styles from "../src/app/page.module.css";
 import { Nav } from "./nav";
 import { Download } from "./download";
 import 'bootstrap/dist/css/bootstrap.min.css';

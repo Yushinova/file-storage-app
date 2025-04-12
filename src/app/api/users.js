@@ -1,4 +1,4 @@
-import { supabase } from "../utils/supabase";
+import { supabase } from "../../../utils/supabase";
 //доавление юзера
 export async function PostUser(login, password){
     try{

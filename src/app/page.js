@@ -1,5 +1,5 @@
 "use client";
-import { Main } from "./components/main";
+import { Main } from "../../components/main";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./page.module.css"
 import { useRouter } from "next/navigation";

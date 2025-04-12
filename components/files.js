@@ -1,8 +1,8 @@
 "use client";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav } from "../components/nav";
-import { GetFiles, DelFile, SetFilesOnType } from "../api/files";
-import { DeleteFromStorage, DownloadFromStorage } from '../api/storage';
+import { Nav } from "./nav";
+import { GetFiles, DelFile, SetFilesOnType } from "../src/app/api/files";
+import { DeleteFromStorage, DownloadFromStorage } from '../src/app/api/storage';
 import { useEffect, useState } from "react";
 
  export function Files(props){
