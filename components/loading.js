@@ -20,7 +20,10 @@ export function ProgressBar({ value }) {
 export function Loading(props) {
   if(props.isloading){
       return(
-          <div className="spinner-border text-light" ></div>
+        <div className='container text-center'>
+            <div className="spinner-border text-light" ></div>
+           <h3>Не закрывайте страницу до окончания загрузки!</h3>
+        </div>
          );
   }
 }

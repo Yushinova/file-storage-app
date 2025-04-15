@@ -43,12 +43,15 @@ form{
   background-color:aqua;
 }
 .fileElement{
-  height: 50px;
-  display: grid;
-  gap: 5%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* display: grid; */
+  /* gap: 5%; */
   width: 50%;
   justify-content: right;
-  grid-template-columns: repeat(3, auto);
+  /* grid-template-columns: repeat(3, auto); */
   border-radius: 10px;
   margin-top: 10px;
   background-color: aliceblue;
@@ -56,4 +59,15 @@ form{
 }
 .buttonElement{
   width: 100px;
+  margin-right: 10px;
+}
+.aElement{
+  margin-right: 10px;
+}
+@media (max-width: 500px){
+  .fileElement{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }

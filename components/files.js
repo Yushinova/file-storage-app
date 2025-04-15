@@ -50,7 +50,7 @@ import { useEffect, useState } from "react";
            <div className='allFiles'>
            {files.map((element)=>(
             <div key={element.id} className='fileElement'>
-               <a onClick={handleClick} href={element.url}>{element.name}</a>
+               <a className='aElement' onClick={handleClick} href={element.url}>{element.name}</a>
                <button type='button' className='btn btn-primary buttonElement' id={element.name} onClick={handleDownload}>Download</button>
                <button type='button' className='btn btn-secondary buttonElement' id={element.name} onClick={handleDel}>Delete</button>
             </div>
