@@ -25,7 +25,7 @@ export async function GetFiles(login){
     //парсим юзера из data
     let files = []
     files = Array.from(data)
-    console.table(files);
+    //console.table(files);
     return files;
   }
   catch(err){

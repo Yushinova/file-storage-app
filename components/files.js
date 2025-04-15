@@ -21,7 +21,7 @@ import { useEffect, useState } from "react";
   //удвление файла из базы данных и из ведерка
   async function handleDel(event) {
     let name = event.target.getAttribute('id');
-    console.log("name:"+name)
+   // console.log("name:"+name)
     let ansver = await DelFile(name);
     if(ansver==null){
      // удаляем из ведерка файл по названию

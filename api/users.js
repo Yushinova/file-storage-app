@@ -27,7 +27,7 @@ export async function GetUser(login, password){
     //парсим юзера из data
     let user = JSON.stringify(data.at(0));
     user = JSON.parse(user);
-    console.log('id: '+ user.id+' login: '+user.login+' password: '+user.password);
+   // console.log('id: '+ user.id+' login: '+user.login+' password: '+user.password);
     if(user.password!==password){
        return null;
     }

@@ -22,7 +22,7 @@ export async function GetPublicUrl(fileName) {
         .storage
         .from(BACKETNAME)
         .getPublicUrl(fileName) 
-        console.log(data.publicUrl)
+       // console.log(data.publicUrl)
         return data.publicUrl
     }
     catch(err){
