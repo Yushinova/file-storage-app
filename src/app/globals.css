@@ -64,10 +64,13 @@ form{
 .aElement{
   margin-right: 10px;
 }
-@media (max-width: 500px){
+@media (max-width: 600px){
   .fileElement{
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
+  }
+  .buttonElement, .aElement{
+    margin-bottom: 10px;
   }
 }
