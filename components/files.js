@@ -2,7 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav } from "./nav";
 import { GetFiles, DelFile, SetFilesOnType } from "../api/files";
-import { DeleteFromStorage, DownloadFromStorage } from '../api/storage';
+import { DeleteFromStorage, DownloadFromStorage, GetPublicUrl} from '../api/storage';
 import { useEffect, useState } from "react";
 
  export function Files(props){
@@ -35,7 +35,24 @@ import { useEffect, useState } from "react";
     let name = event.target.getAttribute('id');
     //получаем blop
     let file = await DownloadFromStorage(name);
-    console.log(file);
+    //console.log(file);
+    const url = window.URL.createObjectURL(file);
+    // Создаем элемент <a>
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = name;
+
+    // Добавляем элемент в DOM
+     document.body.appendChild(link);
+
+    // Программно "кликаем" по элементу
+    link.click();
+
+    // Удаляем элемент из DOM
+    document.body.removeChild(link);
+
+    // Освобождаем URL-объект
+    window.URL.revokeObjectURL(url);
   }
   //получаем все файла авторизованного пользователя
   async function setAll() {

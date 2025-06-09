@@ -14,7 +14,7 @@ export default function Home() {
    if(login==null){
     router.push('/login');
    }
-   console.log('login: '+login)
+   //console.log('login: '+login)
     }, []);
       return (
         <Main data={login}/>
