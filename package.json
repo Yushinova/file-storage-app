@@ -12,7 +12,7 @@
     "@supabase/supabase-js": "^2.49.2",
     "ajax": "^0.0.4",
     "bootstrap": "^5.3.3",
-    "next": "15.2.3",
+    "next": "^16.0.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-use-downloader": "^1.2.10"
